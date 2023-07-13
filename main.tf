@@ -1,4 +1,4 @@
-# Creating the IAM role and attach a policy so that Lambda can assume the role
+# Creating the IAM role and an attach a policy so that Lambda can assume the role
  
 resource "aws_iam_role" "lambda_role" {
  count  = var.create_function ? 1 : 0
